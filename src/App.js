@@ -1,23 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './Welcome.js' 
+import Clock from './Clock.js' 
+import Toggle from './Toggle';
+import LogForm from './LogForm';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Welcome name="user"/>
+        <Clock/>
+        <div><Toggle useColor="true"/></div>
+        <div><LogForm /></div>
       </header>
     </div>
   );
